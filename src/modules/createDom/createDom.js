@@ -1,3 +1,6 @@
+import { cryptEventAction } from "../events/cryptEventAction.js";
+import { desencryptEventAction } from "../events/desencryptEventAction.js";
+
 export const createDom = () => {
   //Create Elements
   const app = document.createElement("div");
