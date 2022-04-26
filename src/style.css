@@ -1,0 +1,184 @@
+body {
+  background-color: #2e2e2e;
+  color: #4caf50;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/01/Matrixcode.gif");
+}
+
+/*rendering div config styles*/
+#root {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+  margin: 140px auto;
+  padding: 50px;
+  width: 960px;
+  border: 0.5px solid #bbb;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgb(146, 141, 141);
+  z-index: 1;
+}
+
+/*header h1 config styles*/
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/*label and input styles config*/
+.labelName {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.inputName {
+  width: 500px;
+  padding: 15px;
+  margin-top: 35px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/*copy-paste button style*/
+.copy-past-container {
+  margin: 30px auto;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copy-paste {
+  width: 75px;
+  padding: 7px;
+  border: 7px;
+  transition: 0.7s;
+  background-color: #ddd;
+}
+
+.copy-paste:hover {
+  background-color: #ffffff14;
+  cursor: pointer;
+  color: #4caf50;
+}
+
+/*controller display from containerButton*/
+.containerButtons {
+  margin: 75px auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  font-size: 1.1rem;
+  font-weight: 200;
+  width: 200px;
+  padding: 15px;
+  background-color: gray;
+  color: #ddd;
+  border-radius: 10px;
+  border: none;
+  transition: 0.7s;
+}
+
+.button:hover {
+  background-color: #ffffff14;
+  cursor: pointer;
+  color: #4caf50;
+}
+
+/*config styles from resolution*/
+.resolutionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*config style from resolution input*/
+.resolution {
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  background: none;
+  color: #4caf50;
+  border: 1px hidden #121212;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin: 25px;
+  font-style: italic;
+  color: #fff;
+}
+
+.iconsContainer {
+  padding: 15px;
+  /* border: 1px solid blue; */
+  margin: auto;
+}
+
+ion-icon {
+  width: 50px;
+  height: 40px;
+  padding: 10px;
+}
+
+/*dimensions from little screens*/
+@media (max-width: 800px) {
+  #root {
+    margin: 40px auto;
+    width: 250px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .labelName {
+    font-size: 1.3rem;
+  }
+
+  .inputName {
+    width: 200px;
+    font-size: 0.5rem;
+  }
+
+  .copy {
+    width: 75px;
+    padding: 5px;
+    border: 7px;
+    margin-left: 35%;
+  }
+
+  .containerButtons {
+    margin: 50px auto;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    font-size: 0.7rem;
+    font-weight: 200;
+    width: 100px;
+    padding: 12px;
+  }
+
+  .resolution {
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  ion-icon {
+    width: 40px;
+    height: 30px;
+    padding: 10px;
+  }
+}
