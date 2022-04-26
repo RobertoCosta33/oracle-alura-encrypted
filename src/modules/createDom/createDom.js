@@ -19,7 +19,36 @@ export const createDom = () => {
   const linkedinIcon = document.createElement("ion-icon");
   const githubIconAncor = document.createElement("a");
   const githubIcon = document.createElement("ion-icon");
-  
+
+  //Event from crypt text
+  crypt.addEventListener("click", () => {
+    const newText = cryptEventAction(textInput.value);
+
+    resolution.innerText = newText;
+
+    textInput.value = "";
+  });
+
+  //Event from desencrypt text
+  desencrypt.addEventListener("click", () => {
+    const newText = desencryptEventAction(textInput.value);
+
+    resolution.innerText = newText;
+
+    textInput.value = "";
+  });
+
+  //Event from copy button
+  copy.addEventListener("click", () => {
+    navigator.clipboard.writeText(resolution.innerHTML);
+  });
+
+  //Event from paste button
+  paste.addEventListener("click", async () => {
+    const read = await navigator.clipboard.readText();
+    textInput.value = read;
+  });
+
   return {
     app,
     head,
